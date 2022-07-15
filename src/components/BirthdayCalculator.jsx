@@ -106,7 +106,7 @@ const BirthDayCalculator = () => {
         Date of Birth
       </Typography>
       <Grid container spacing={2} sx={{ marginBottom: 2 }}>
-        <Grid item xs={4}>
+        <Grid item xs={12} sm={4}>
           <FormControl fullWidth error={errors.date !== ""}>
             <InputLabel id="dates-select-label">Date</InputLabel>
             <Select
@@ -123,7 +123,7 @@ const BirthDayCalculator = () => {
             <FormHelperText>{errors.date}</FormHelperText>
           </FormControl>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={12} sm={4}>
           <FormControl fullWidth error={errors.month !== ""}>
             <InputLabel id="month-select-label">Month</InputLabel>
             <Select
@@ -140,7 +140,7 @@ const BirthDayCalculator = () => {
             <FormHelperText>{errors.month}</FormHelperText>
           </FormControl>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={12} sm={4}>
           <FormControl fullWidth error={errors.year !== ""}>
             <InputLabel id="year-select-label">Year</InputLabel>
             <Select
